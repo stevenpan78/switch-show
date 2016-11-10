@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Div changing app</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="mainCtrl" ng-switch="enter">
+		<label>Enter item<br>
+		<textarea ng-model="enter"></textarea>
+		</label>
+		<h1 ng-switch-when="dog">Dogs are for sale</h1>
+		<h1 ng-switch-when="cat">Cats are for sale</h1>
+		<h1 ng-switch-when="bird">Birds are for sale</h1>
+		<h1 ng-switch-when="fish">Fish are for sale</h1>
+		<h1 ng-switch-when="alligator">Alligators are for sale</h1>
+	</div>
+	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
