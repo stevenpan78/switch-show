@@ -1,6 +1,1 @@
-var runner = function runner($scope){
-	$scope.enter;
-}
-
-angular.module('myApp',[])
-		.controller('mainCtrl',runner);
+var runner=function(n,t){n.enter,t.globe="teapotsanddocks"};angular.module("myApp",[]).controller("mainCtrl",runner).controller("newCtrl",function(n){n.dataName="Jane",n.dataCountry="Denmark",n.dataState="Good",n.count=0,n.ranner=function(){n.count+=1}});

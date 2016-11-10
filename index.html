@@ -15,6 +15,27 @@
 		<h1 ng-switch-when="bird">Birds are for sale</h1>
 		<h1 ng-switch-when="fish">Fish are for sale</h1>
 		<h1 ng-switch-when="alligator">Alligators are for sale</h1>
+		<hr>
+	</div>
+	<div ng-controller="newCtrl">
+		<label>Name</label>
+		<input type="text" ng-model="dataName">
+		<p ng-bind="dataName"></p>
+		<label>Country</label>
+		<input type="text" ng-model="dataCountry">
+		<p ng-bind="dataCountry"></p>
+		<select ng-model="dataState" ng-model-options="{debounce:3000}">
+			<option>None</option>
+			<option>Bad</option>
+			<option>Good</option>
+		</select>
+		<p ng-bind="dataState"></p>
+		<label>Password</label>
+		<input type="password" ng-model="globe">
+		<h1>Your password is <span ng-bind="globe"></span></h1>
+		<h4>Write something below</h4>
+		<input type="text" ng-change="ranner()" ng-model="value">
+		<p>You typed {{count}} letters</p>
 	</div>
 	<script src="js/app.js"></script>
 	<script src="js/main.js"></script>
